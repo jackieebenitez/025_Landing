@@ -1,0 +1,93 @@
+
+/*Media Queries*/
+[class*="col-"] {
+    /* For mobile phones: */
+    width: 100%;
+}
+@media screen and (max-width: 1366px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .logo{width:30%;}
+}
+@media screen and (max-width: 535px)  {
+    .abajo {
+    float:none;
+         }
+    .col-8, .col-4{
+        width:100%;
+    }
+    }
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+h2,p,.titulo{
+    color:white;
+}
+/*universal*/
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Open Sans", sans-serif;
+}
+/*rows*/
+.row{
+    padding:0% 15%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*tipografias*/
+.titulo{
+    font-size:225%;
+}
+p {
+    font-size: 75%;
+}
+h2{
+    text-align: left;
+}
+/*menú*/
+nav{
+    text-align: right;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu li {
+    padding: 3px;
+    margin-bottom: 2px;
+    color: black;
+    display:inline-block;
+    font-size:80%; 
+}
+.menu li:hover {
+    background-color: pink;
+}
+/*section*/
+section{
+    background-color:gray;
+}
+/*formulario*/
+input{
+    display: block;
+}
+/*footer*/
+.footer{ 
+    text-align: center;
+    color:black;
+}
